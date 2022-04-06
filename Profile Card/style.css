@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #ffffff;
+  --greyLight-1: #e4ebf5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+}
+::selection {
+  background-color: red;
+  color: white;
+}
+body {
+  background: #e4ebf5;
+  height: 100vh;
+}
+.myBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+#myInput {
+  width: 500px;
+  padding: 10px 20px;
+  outline: 0ch;
+  border-radius: 10px;
+  box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset,
+    rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+  border: none;
+}
+#searchBtn {
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+  position: relative;
+  right: 30px;
+  outline: 0ch;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  color: red;
+  border: none;
+  box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset,
+    rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+  transition: 0.5s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-top: 20px;
+  align-items: center;
+  height: 100vh;
+  transition: 0.5s;
+  position: relative;
+  bottom: 40px;
+}
+.container {
+  /* margin: auto; */
+  width: 350px;
+  height: 530px;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
+    -0.2rem -0.2rem 1.8rem var(--white);
+  border-radius: 28px;
+  border-bottom: 5px solid red;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border: 3px solid red;
+}
+section .dark .main img {
+  border: 3px solid yellow;
+}
+.main h3 {
+  color: red;
+  font-family: sans-serif;
+}
+section .dark .id {
+  color: yellow !important;
+}
+.id {
+  color: red !important;
+}
+#userId {
+  position: relative;
+  bottom: 40px;
+}
+section .dark .following {
+  color: yellow !important;
+}
+.following {
+  position: relative;
+  bottom: 70px;
+  color: red !important;
+}
+#following {
+  position: relative;
+  bottom: 110px;
+}
+section .dark .followers {
+  color: yellow !important;
+}
+.followers {
+  position: relative;
+  color: red !important;
+  bottom: 140px;
+}
+#follo {
+  position: relative;
+  bottom: 180px;
+}
+section .dark .main h3 {
+  color: yellow;
+}
+.main span {
+  text-align: center;
+  color: darkgrey;
+  font-family: "Redressed", cursive;
+}
+
+.main h4 {
+  color: darkgrey;
+  font-family: sans-serif;
+}
+
+#Url {
+  position: relative;
+  bottom: 180px;
+  padding: 7px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#Url:hover {
+  background-color: rgb(187, 8, 8);
+  border: 1px solid rgb(187, 8, 8);
+}
+.dark #Url {
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+.dark #Url:hover {
+  background-color: rgb(236, 236, 9);
+}
+
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 180px;
+  right: 20px;
+}
+.sec li {
+  list-style-type: none;
+}
+.sec li a {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #e9f5ff;
+  color: #7eb5fd;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.sec li a:hover {
+  color: #fff;
+}
+.sec li a .fa {
+  position: relative;
+  z-index: 1000;
+}
+
+.sec li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #7eb5fd;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.sec li a:hover::before {
+  transform: scale(1);
+}
+
+.toggle {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #e9f5ff;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle::before {
+  content: "\f186";
+  font-family: fontawesome;
+  color: #7eb5fd;
+}
+
+.dark .toggle::before {
+  content: "\f185";
+}
+section .dark {
+  background-color: #24292d;
+}
+
+section .dark .myBtn {
+  background-color: #24292d;
+  width: 200px;
+}
+
+section .dark .container {
+  box-shadow: 0.8rem 0.8rem 1.4rem black, -0.2rem -0.2rem 1.8rem black;
+  border-bottom: 5px solid yellow;
+}
